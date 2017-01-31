@@ -9,4 +9,4 @@ const colors = {
 };
 
 colors.positive = colors.calm;
-export default colors;
+export { colors };
