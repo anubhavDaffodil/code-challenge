@@ -12,9 +12,12 @@ export default StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center'
 	},
-	body: {
-		flex: 2,
-		backgroundColor: colors.dark
+	matchName: {
+		margin: 20,
+		fontWeight: 'bold',
+		fontSize: 16,
+		textAlign: 'center',
+		color: colors.lightish
 	},
 	teams: {
 		flex: 1,
@@ -23,20 +26,14 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		backgroundColor: colors.darkish
 	},
-	text: {
-		fontSize: 10,
-		textAlign: 'center',
-		color: colors.type,
-	},
 	score: {
-		fontSize: 20,
+		fontSize: 30,
+		color: colors.royal,
 		textAlign: 'center',
 		fontWeight: 'bold'
 	},
-	name: {
-		margin: 10,
-		fontSize: 20,
-		textAlign: 'center',
-		color: colors.lightish
+	body: {
+		flex: 2,
+		backgroundColor: colors.dark
 	}
 });

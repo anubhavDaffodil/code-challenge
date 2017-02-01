@@ -8,10 +8,10 @@ const MatchDetail = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<Text style={styles.name}>{props.details.name}</Text>
+				<Text style={styles.matchName}>{props.details.name}</Text>
 				<View style={styles.teams}>
-					<TeamCard details={props.details.team_data[0]} />
-					<Text style={styles.score}>{props.details.team_data[0].score} : {props.details.team_data[1].score}</Text>
+					<TeamCard details={props.details.team_data[0]} left={true} />
+					<Text style={styles.score}>{props.details.team_data[0].score} - {props.details.team_data[1].score}</Text>
 					<TeamCard details={props.details.team_data[1]} />
 				</View>
 			</View>
