@@ -3,8 +3,7 @@ import { colors } from '../../config/styles';
 
 export default StyleSheet.create({
 	container: {
-		flex: 1,
-		backgroundColor: colors.darkish,
+		flex: 1
 	},
 	header: {
 		flex: 1,
