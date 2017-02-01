@@ -4,6 +4,7 @@
 	"team_data": [
 		{
 			"side": "Home",
+			"logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Blackburn_Rovers.svg/180px-Blackburn_Rovers.svg.png",
 			"score": "2",
 			"halfscore": "1",
 			"extrascore": null,
@@ -23,6 +24,7 @@
 		},
 		{
 			"side": "Away",
+			"logo_url": "https://upload.wikimedia.org/wikipedia/en/2/21/Oldham_Athletic_new_badge.png",
 			"score": "2",
 			"halfscore": "0",
 			"extrascore": null,
