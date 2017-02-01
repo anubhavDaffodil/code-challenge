@@ -1,16 +1,34 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../config/styles';
 
-export default StyleSheet.create ({
+export default StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: colors.lightish,
 		justifyContent: 'center',
 		alignItems: 'center',
-		padding: 5,
-		margin: 10
+		padding: 5
 	},
-	name: {
-		textAlign: 'center'
+	teamName: {
+		textAlign: 'center',
+		color: colors.dark,
+		fontWeight: 'bold'
+	},
+	logoContainer: {
+		flexDirection: 'row'
+	},
+	sideIconLeft: {
+		position: 'absolute',
+		left: -10,
+		top: -10
+	},
+	sideIconRight: {
+		position: 'absolute',
+		right: -10,
+		top: -10
+	},
+	logo: {
+		height: 75,
+		width: 75,
+		resizeMode: 'contain'
 	}
 });
