@@ -5,7 +5,7 @@ import details from '../../lib/match_sample.json';
 const MatchDetailContainer = props => {
 	return (
 		<MatchDetail
-			details={details}
+			matchDetails={details}
 			/>
 	);
 };

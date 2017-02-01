@@ -5,16 +5,19 @@ import styles from './styles';
 import Icon from '../../components/Icon';
 import TeamCard from '../../components/TeamCard';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
+import SummaryTab from '../../components/SummaryTab';
+import EventsTab from '../../components/EventsTab';
+import LeagueTab from '../../components/LeagueTab';
 
 const MatchDetail = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<Text style={styles.matchName}>{props.details.name}</Text>
+				<Text style={styles.matchName}>{props.matchDetails.name}</Text>
 				<View style={styles.teams}>
-					<TeamCard details={props.details.team_data[0]} left={true} />
-					<Text style={styles.score}>{props.details.team_data[0].score} - {props.details.team_data[1].score}</Text>
-					<TeamCard details={props.details.team_data[1]} />
+					<TeamCard teamDetails={props.matchDetails.team_data[0]} left={true} />
+					<Text style={styles.score}>{props.matchDetails.team_data[0].score} - {props.matchDetails.team_data[1].score}</Text>
+					<TeamCard teamDetails={props.matchDetails.team_data[1]} />
 				</View>
 			</View>
 			<View style={styles.body}>
@@ -24,9 +27,9 @@ const MatchDetail = props => {
 					tabBarInactiveTextColor={colors.stable}
 					tabBarBackgroundColor={colors.dark}
 					>
-					<View tabLabel="Summary" />
-					<View tabLabel="Events" />
-					<View tabLabel="Teams" />
+					<SummaryTab tabLabel="Summary" />
+					<EventsTab tabLabel="Events" matchDetails={props.matchDetails.events} />
+					<LeagueTab tabLabel="League" />
 				</ScrollableTabView>
 			</View>
 		</View>
@@ -34,7 +37,7 @@ const MatchDetail = props => {
 };
 
 MatchDetail.propTypes = {
-	details: React.PropTypes.object
+	matchDetails: React.PropTypes.object
 };
 
 export default MatchDetail;
