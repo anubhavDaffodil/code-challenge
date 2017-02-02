@@ -1,17 +1,21 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import styles from './styles';
 
 const EventsTab = props => {
 	return (
-		<View style={styles.container}>
-			<Text>Events</Text>
-		</View>
+		<ScrollView>
+			<View style={styles.container}>
+				{
+					props.events.map((e, i) => <Text key={i} style={styles.eventLabel}>{e.label}</Text>)
+				}
+			</View>
+		</ScrollView>
 	);
 }
 
 EventsTab.propTypes = {
-	events: React.PropTypes.object
+	events: React.PropTypes.array
 };
 
 export default EventsTab;

@@ -33,7 +33,7 @@ export default StyleSheet.create({
 	},
 	body: {
 		flex: 2,
-		backgroundColor: colors.dark
+		backgroundColor: colors.darkish
 	},
 	tabBarUnderlineStyle: {
 		backgroundColor: colors.royal
