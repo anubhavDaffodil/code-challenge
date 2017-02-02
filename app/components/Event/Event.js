@@ -24,8 +24,17 @@ function getIconName(category, value) {
 const Event = props => {
 	return (
 		<View style={styles.container}>
-			<Icon name={getIconName(props.event.category, props.event.value)} />
-			<Text style={styles.eventLabel}>{props.event.label}</Text>
+			<View style={styles.labelLeft}>
+				<Text style={styles.labelText}>{props.event.label}</Text>
+			</View>
+			<View style={styles.iconContainer}>
+				<View style={styles.iconSubContainer}>
+					<Icon name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
+				</View>
+			</View>
+			<View style={styles.labelRight}>
+				<Text style={styles.labelText}>{props.event.label}</Text>
+			</View>
 		</View>
 	);
 }
