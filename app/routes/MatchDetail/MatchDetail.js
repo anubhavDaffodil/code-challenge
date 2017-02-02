@@ -34,7 +34,7 @@ const MatchDetail = props => {
 					tabBarBackgroundColor={colors.dark}
 					>
 					<SummaryTab tabLabel="Summary" />
-					<EventsTab tabLabel="Events" events={props.matchDetails.events} />
+					<EventsTab tabLabel="Events" homeOnLeft={props.matchDetails.team_data[0].side === 'Home'} events={props.matchDetails.events} />
 					<LeagueTab tabLabel="League" />
 				</ScrollableTabView>
 			</View>

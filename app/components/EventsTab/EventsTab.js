@@ -15,7 +15,7 @@ class EventsTab extends Component {
 		return (
 			<ListView
 				dataSource={this.state.dataSource}
-				renderRow={rowData => <Event event={rowData} />}
+				renderRow={rowData => <Event event={rowData} homeOnLeft={this.props.homeOnLeft} />}
 				/>
 		);
 	}
