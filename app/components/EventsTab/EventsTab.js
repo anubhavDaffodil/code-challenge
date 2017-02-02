@@ -1,16 +1,24 @@
-import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, ListView } from 'react-native';
 import styles from './styles';
 import Event from '../Event';
 
-const EventsTab = props => {
-	return (
-		<ScrollView>
-			<View style={styles.container}>
-				{props.events.map((e, i) => <Event key={i} event={e} />)}
-			</View>
-		</ScrollView>
-	);
+class EventsTab extends Component {
+	constructor(props) {
+		super(props);
+		const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+		this.state = {
+			dataSource: ds.cloneWithRows(props.events)
+		};
+	}
+	render() {
+		return (
+			<ListView
+				dataSource={this.state.dataSource}
+				renderRow={rowData => <Event event={rowData} />}
+				/>
+		);
+	}
 }
 
 EventsTab.propTypes = {
