@@ -32,7 +32,7 @@ const Event = props => {
 				<View style={styles.iconSubContainer}>
 					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
 				</View>
-				<Text style={styles.labelCenterText}>{props.event.label}</Text>
+				<Text style={styles.labelCenterText}>{`${props.event.label} (${props.event.time})`}</Text>
 				<View style={styles.iconSubContainer}>
 					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
 				</View>

@@ -2,7 +2,6 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { colors } from '../../config/styles';
 import styles from './styles';
-import Icon from '../../components/Icon';
 import TeamCard from '../../components/TeamCard';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import SummaryTab from '../../components/SummaryTab';
