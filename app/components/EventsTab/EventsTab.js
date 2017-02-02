@@ -7,9 +7,7 @@ const EventsTab = props => {
 	return (
 		<ScrollView>
 			<View style={styles.container}>
-				{
-					props.events.map((e, i) => <Event key={i} event={e} />)
-				}
+				{props.events.map((e, i) => <Event key={i} event={e} />)}
 			</View>
 		</ScrollView>
 	);
