@@ -7,18 +7,18 @@ export default StyleSheet.create({
 		flexDirection: 'row',
 		margin: 10
 	},
-	labelText: {
-		color: colors.type
+	labelLeftText: {
+		flex: 1,
+		color: colors.type,
+		textAlign: 'right'
 	},
-	labelLeft: {
-		flex: 3,
-		justifyContent: 'flex-end',
-		alignItems: 'center',
-		flexDirection: 'row'
+	labelRightText: {
+		flex: 1,
+		color: colors.type,
+		textAlign: 'left'
 	},
-	labelRight: {
+	labelContainer: {
 		flex: 3,
-		justifyContent: 'flex-start',
 		alignItems: 'center',
 		flexDirection: 'row'
 	},
