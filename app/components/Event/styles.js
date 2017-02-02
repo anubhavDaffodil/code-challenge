@@ -5,7 +5,21 @@ export default StyleSheet.create({
 	container: {
 		flex: 1,
 		flexDirection: 'row',
-		margin: 10
+		padding: 10
+	},
+	matchEventContainer: {
+		flex: 1,
+		flexDirection: 'row',
+		padding: 10,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: colors.type
+	},
+	labelCenterText: {
+		marginLeft: 20,
+		marginRight: 20,
+		color: colors.calm,
+		textAlign: 'center'
 	},
 	labelLeftText: {
 		flex: 1,
