@@ -10,9 +10,10 @@ function getIconName(category, value) {
 			return 'Whistle';
 		case 'goal':
 			return value;				// Assuming value will be either Goal or OwnGoal
-		case 'substitution_off':
 		case 'substitution_on':
-			return 'Substitution';
+			return 'SubstitutionOn';
+		case 'substitution_off':
+			return 'SubstitutionOff';
 		case 'booking':
 			return `${value}Card`;		// Assuming value will be 'Yellow', 'Red', or 'SecondYellow'
 		case 'penaltyshot':
