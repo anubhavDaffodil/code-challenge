@@ -41,21 +41,33 @@ const Event = props => {
 		);
 
 	if (props.event.side === 'home') {
-		if (props.homeOnLeft)
-			leftEventLabel = `(${props.event.time}') ${props.event.label}`;
-		else
-			rightEventLabel = `${props.event.label} (${props.event.time}')`;
+		if (props.homeOnLeft) {
+			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			if (props.event.additionalInfo)
+				rightEventLabel = <Text style={styles.labelRighAdditionaltText}>{`${props.event.additionalInfo}`}</Text>;
+		}
+		else {
+			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			if (props.event.additionalInfo)
+				leftEventLabel = <Text style={styles.labelLeftAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+		}
 	}
 	else if (props.event.side === 'away') {
-		if (!props.homeOnLeft)
-			leftEventLabel = `(${props.event.time}') ${props.event.label}`;
-		else
-			rightEventLabel = `${props.event.label} (${props.event.time}')`;
+		if (!props.homeOnLeft) {
+			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			if (props.event.additionalInfo)
+				rightEventLabel = <Text style={styles.labelRighAdditionaltText}>{`${props.event.additionalInfo}`}</Text>;
+		}
+		else {
+			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			if (props.event.additionalInfo)
+				leftEventLabel = <Text style={styles.labelLeftAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+		}
 	}
 	return (
 		<View style={styles.container}>
 			<View style={styles.labelContainer}>
-				<Text style={styles.labelLeftText}>{leftEventLabel}</Text>
+				{leftEventLabel}
 			</View>
 			<View style={styles.iconContainer}>
 				<View style={styles.iconSubContainer}>
@@ -63,7 +75,7 @@ const Event = props => {
 				</View>
 			</View>
 			<View style={styles.labelContainer}>
-				<Text style={styles.labelRightText}>{rightEventLabel}</Text>
+				{rightEventLabel}
 			</View>
 		</View>
 	);

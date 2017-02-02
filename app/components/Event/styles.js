@@ -31,6 +31,16 @@ export default StyleSheet.create({
 		color: colors.type,
 		textAlign: 'left'
 	},
+	labelLeftAdditionalText: {
+		flex: 1,
+		color: colors.dark,
+		textAlign: 'right'
+	},
+	labelRightAdditionalText: {
+		flex: 1,
+		color: colors.dark,
+		textAlign: 'left'
+	},
 	labelContainer: {
 		flex: 3,
 		alignItems: 'center',
