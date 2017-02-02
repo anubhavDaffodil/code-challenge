@@ -13,10 +13,16 @@ const MatchDetail = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<Text style={styles.matchName}>{props.matchDetails.name}</Text>
+				<Text style={styles.matchName}>{props.matchDetails.competition_name}</Text>
 				<View style={styles.teams}>
 					<TeamCard teamDetails={props.matchDetails.team_data[0]} left={true} />
-					<Text style={styles.score}>{props.matchDetails.team_data[0].score} - {props.matchDetails.team_data[1].score}</Text>
+					<View style={styles.scoreContainer}>
+						<Text style={styles.score}>{props.matchDetails.team_data[0].score} - {props.matchDetails.team_data[1].score}</Text>
+						{
+							props.matchDetails.second_half_start &&
+							<Text style={styles.halfscore}>{props.matchDetails.team_data[0].halfscore} - {props.matchDetails.team_data[1].halfscore}</Text>
+						}
+					</View>
 					<TeamCard teamDetails={props.matchDetails.team_data[1]} />
 				</View>
 			</View>

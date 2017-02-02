@@ -25,9 +25,16 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		backgroundColor: colors.darkish
 	},
+	scoreContainer: {},
 	score: {
 		fontSize: 30,
 		color: colors.royal,
+		textAlign: 'center',
+		fontWeight: 'bold'
+	},
+	halfscore: {
+		fontSize: 15,
+		color: colors.dark,
 		textAlign: 'center',
 		fontWeight: 'bold'
 	},
