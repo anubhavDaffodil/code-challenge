@@ -23,6 +23,9 @@ function getIconName(category, value) {
 }
 
 const Event = props => {
+	let leftEventLabel;
+	let rightEventLabel;
+
 	if (props.event.side === 'both')
 		return (
 			<View style={styles.matchEventContainer}>
@@ -36,12 +39,22 @@ const Event = props => {
 			</View>
 		);
 
-	const homeEventLabel = props.event.side === 'home' ? props.event.label : null;
-	const awayEventLabel = props.event.side === 'away' ? props.event.label : null;
+	if (props.event.side === 'home') {
+		if (props.homeOnLeft)
+			leftEventLabel = `(${props.event.time}) ${props.event.label}`;
+		else
+			rightEventLabel = `${props.event.label} (${props.event.time})`;
+	}
+	else if (props.event.side === 'away') {
+		if (!props.homeOnLeft)
+			leftEventLabel = `(${props.event.time}) ${props.event.label}`;
+		else
+			rightEventLabel = `${props.event.label} (${props.event.time})`;
+	}
 	return (
 		<View style={styles.container}>
 			<View style={styles.labelContainer}>
-				<Text style={styles.labelLeftText}>{props.homeOnLeft ? homeEventLabel : awayEventLabel}</Text>
+				<Text style={styles.labelLeftText}>{leftEventLabel}</Text>
 			</View>
 			<View style={styles.iconContainer}>
 				<View style={styles.iconSubContainer}>
@@ -49,7 +62,7 @@ const Event = props => {
 				</View>
 			</View>
 			<View style={styles.labelContainer}>
-				<Text style={styles.labelRightText}>{!props.homeOnLeft ? homeEventLabel : awayEventLabel}</Text>
+				<Text style={styles.labelRightText}>{rightEventLabel}</Text>
 			</View>
 		</View>
 	);
