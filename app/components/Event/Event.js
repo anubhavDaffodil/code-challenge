@@ -32,7 +32,7 @@ const Event = props => {
 				<View style={styles.iconSubContainer}>
 					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
 				</View>
-				<Text style={styles.labelCenterText}>{`${props.event.label} (${props.event.time})`}</Text>
+				<Text style={styles.labelCenterText}>{`${props.event.label} (${props.event.time}')`}</Text>
 				<View style={styles.iconSubContainer}>
 					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
 				</View>
@@ -41,15 +41,15 @@ const Event = props => {
 
 	if (props.event.side === 'home') {
 		if (props.homeOnLeft)
-			leftEventLabel = `(${props.event.time}) ${props.event.label}`;
+			leftEventLabel = `(${props.event.time}') ${props.event.label}`;
 		else
-			rightEventLabel = `${props.event.label} (${props.event.time})`;
+			rightEventLabel = `${props.event.label} (${props.event.time}')`;
 	}
 	else if (props.event.side === 'away') {
 		if (!props.homeOnLeft)
-			leftEventLabel = `(${props.event.time}) ${props.event.label}`;
+			leftEventLabel = `(${props.event.time}') ${props.event.label}`;
 		else
-			rightEventLabel = `${props.event.label} (${props.event.time})`;
+			rightEventLabel = `${props.event.label} (${props.event.time}')`;
 	}
 	return (
 		<View style={styles.container}>

@@ -11,7 +11,7 @@ const TeamCard = props => {
 				{
 					props.teamDetails.side === 'Home' &&
 					<View style={props.left ? styles.sideIconLeft : styles.sideIconRight}>
-						<Icon name="Home" width={32} height={32} fill={colors.type} />
+						<Icon name="Home" width={30} height={30} fill={colors.type} />
 					</View>
 				}
 				<Image source={{ uri: props.teamDetails.logo_url }} style={styles.logo} />
