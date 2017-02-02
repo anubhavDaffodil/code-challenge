@@ -11,10 +11,16 @@ export default StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center'
 	},
-	matchName: {
-		margin: 20,
+	competitionName: {
 		fontWeight: 'bold',
 		fontSize: 16,
+		textAlign: 'center',
+		color: colors.lightish
+	},
+	seasonName: {
+		marginBottom: 10,
+		fontWeight: 'bold',
+		fontSize: 12,
 		textAlign: 'center',
 		color: colors.lightish
 	},

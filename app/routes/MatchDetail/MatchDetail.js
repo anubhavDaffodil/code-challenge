@@ -12,7 +12,8 @@ const MatchDetail = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<Text style={styles.matchName}>{props.matchDetails.competition_name}</Text>
+				<Text style={styles.competitionName}>{props.matchDetails.competition_name}</Text>
+				<Text style={styles.seasonName}>{props.matchDetails.season_name}</Text>
 				<View style={styles.teams}>
 					<TeamCard teamDetails={props.matchDetails.team_data[0]} left={true} />
 					<View style={styles.scoreContainer}>
