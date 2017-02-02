@@ -8,7 +8,13 @@ class EventsTab extends Component {
 		super(props);
 		const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
 		this.state = {
-			dataSource: ds.cloneWithRows(props.events)
+			dataSource: ds.cloneWithRows(props.events.sort((a, b) => {
+				if (new Date(a.timestamp) < new Date(b.timestamp))
+					return -1;
+				if (new Date(a.timestamp) > new Date(b.timestamp))
+					return 1;
+				return 0;
+			}))
 		};
 	}
 	render() {
