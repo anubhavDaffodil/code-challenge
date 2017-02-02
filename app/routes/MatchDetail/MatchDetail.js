@@ -29,9 +29,9 @@ const MatchDetail = props => {
 			<View style={styles.body}>
 				<ScrollableTabView
 					tabBarUnderlineStyle={styles.tabBarUnderlineStyle}
-					tabBarActiveTextColor={colors.royal}
+					tabBarActiveTextColor={colors.calm}
 					tabBarInactiveTextColor={colors.stable}
-					tabBarBackgroundColor={colors.dark}
+					tabBarBackgroundColor={colors.type}
 					>
 					<SummaryTab tabLabel="Highlights" />
 					<EventsTab tabLabel="Live" homeOnLeft={props.matchDetails.team_data[0].side === 'Home'} events={props.matchDetails.events} />

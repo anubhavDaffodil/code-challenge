@@ -49,6 +49,6 @@ export default StyleSheet.create({
 		backgroundColor: colors.darkish
 	},
 	tabBarUnderlineStyle: {
-		backgroundColor: colors.royal
+		backgroundColor: colors.calm
 	}
 });
