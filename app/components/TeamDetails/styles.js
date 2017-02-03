@@ -18,11 +18,6 @@ export default StyleSheet.create({
 		color: colors.type,
 		fontWeight: 'bold'
 	},
-	highlight: {
-		color: colors.royal,
-		fontWeight: 'bold',
-		fontSize: 18
-	},
 	teamName: {
 		textAlign: 'center',
 		color: colors.dark,
