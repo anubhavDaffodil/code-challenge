@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text } from 'react-native';
 import styles from './styles';
 import Icon from '../Icon';
-import defaultStyles, { colors } from '../../config/styles';
+import defaultStyles from '../../config/styles';
 
-const TeamDetails = props => {
+const TeamDetails = (props) => {
 	return (
 		<View style={styles.container}>
 			<Text style={defaultStyles.labelText}>{`${props.teamDetails.name} `}<Text style={defaultStyles.info}>{`(${props.teamDetails.num_players})`}</Text></Text>

@@ -4,7 +4,7 @@ import styles from './styles';
 import Icon from '../Icon';
 import defaultStyles, { colors } from '../../config/styles';
 
-const TeamCard = props => {
+const TeamCard = (props) => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.logoContainer}>

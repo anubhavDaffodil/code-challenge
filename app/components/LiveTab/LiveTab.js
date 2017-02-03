@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ListView } from 'react-native';
-import styles from './styles';
+import { ListView } from 'react-native';
 import Event from '../Event';
 
 class LiveTab extends Component {
@@ -21,14 +20,15 @@ class LiveTab extends Component {
 		return (
 			<ListView
 				dataSource={this.state.dataSource}
-				renderRow={rowData => <Event event={rowData} homeOnLeft={this.props.homeOnLeft} />}
+				renderRow={(rowData) => <Event event={rowData} homeOnLeft={this.props.homeOnLeft} />}
 				/>
 		);
 	}
 }
 
 LiveTab.propTypes = {
-	events: React.PropTypes.array.isRequired
+	events: React.PropTypes.array.isRequired,
+	homeOnLeft: React.PropTypes.bool
 };
 
 export default LiveTab;

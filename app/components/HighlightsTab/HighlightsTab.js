@@ -5,12 +5,12 @@ import moment from 'moment';
 import TeamDetails from '../TeamDetails';
 import defaultStyles from '../../config/styles';
 
-const HighlightsTab = props => {
+const HighlightsTab = (props) => {
 	return (
 		<View style={styles.container}>
 			<Text style={defaultStyles.headerText1}>{props.matchDetails.name}</Text>
 			<View style={styles.horizontalContainer}>
-				{props.matchDetails.team_data.map(teamDetails => <TeamDetails key={teamDetails.teamref} teamDetails={teamDetails} />)}
+				{props.matchDetails.team_data.map((teamDetails) => <TeamDetails key={teamDetails.teamref} teamDetails={teamDetails} />)}
 			</View>
 			<View style={styles.horizontalContainer}>
 				<View style={styles.horizontalItemContainer}>

@@ -4,7 +4,7 @@ import styles from './styles';
 import defaultStyles from '../../config/styles';
 import moment from 'moment';
 
-const LeagueTab = props => {
+const LeagueTab = (props) => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>

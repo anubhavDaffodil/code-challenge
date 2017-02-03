@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import { colors } from '../../config/styles';
+import images from '../../config/images';
 import styles from './styles';
 import TeamCard from '../../components/TeamCard';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
@@ -8,11 +9,11 @@ import HighlightsTab from '../../components/HighlightsTab';
 import LiveTab from '../../components/LiveTab';
 import LeagueTab from '../../components/LeagueTab';
 
-const MatchDetail = props => {
+const MatchDetail = (props) => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<Image source={require('../../images/sportdec-diamond.png')} style={styles.logo} />
+				<Image source={images['sportdec-diamond']} style={styles.logo} />
 				<Text style={styles.competitionName}>{props.matchDetails.competition_name}</Text>
 				<Text style={styles.seasonName}>{props.matchDetails.season_name}</Text>
 				<View style={styles.teams}>

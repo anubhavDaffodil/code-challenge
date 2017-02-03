@@ -4,7 +4,7 @@ import styles from './styles';
 import Icon from '../Icon';
 import defaultStyles, { colors } from '../../config/styles';
 
-const Event = props => {
+const Event = (props) => {
 	let leftEventLabel;
 	let rightEventLabel;
 
@@ -57,7 +57,8 @@ const Event = props => {
 }
 
 Event.propTypes = {
-	event: React.PropTypes.object.isRequired
+	event: React.PropTypes.object.isRequired,
+	homeOnLeft: React.PropTypes.bool
 };
 
 export default Event;

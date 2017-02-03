@@ -2,7 +2,7 @@ import React from 'react';
 import MatchDetail from './MatchDetail';
 import details from '../../lib/match_sample.json';
 
-const MatchDetailContainer = props => {
+const MatchDetailContainer = () => {
 	return (
 		<MatchDetail
 			matchDetails={details}

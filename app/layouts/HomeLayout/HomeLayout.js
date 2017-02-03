@@ -4,7 +4,7 @@ import Routes from '../../config/routes';
 import styles from './styles';
 import { colors } from '../../config/styles';
 
-export default HomeLayout = props => {
+const HomeLayout = () => {
 	const route = Routes.getMatchDetailRoute();
 	return (
 		<View style={styles.container}>
@@ -20,3 +20,5 @@ export default HomeLayout = props => {
 		</View>
 	);
 }
+
+export default HomeLayout;

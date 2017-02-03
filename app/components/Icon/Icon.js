@@ -23,7 +23,7 @@ function getIconName(category, value) {
 	}
 }
 
-const Icon = props => <View style={styles.container}><SvgIcon {...props} name={getIconName(props.category, props.value)} svgs={svgs} /></View>;
+const Icon = (props) => <View style={styles.container}><SvgIcon {...props} name={getIconName(props.category, props.value)} svgs={svgs} /></View>;
 
 Icon.propTypes = {
 	value: React.PropTypes.string.isRequired,
