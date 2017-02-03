@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Navigator, StatusBar } from 'react-native';
+import { View, Navigator, StatusBar, Platform } from 'react-native';
 import Routes from '../../config/routes';
 import styles from './styles';
 import { colors } from '../../config/styles';
@@ -11,6 +11,7 @@ const HomeLayout = () => {
 			<StatusBar
 				backgroundColor={colors.royal}
 				barStyle="light-content"
+				hidden={Platform.OS === 'ios' ? true : false}
 				/>
 			<Navigator
 				{...route}
