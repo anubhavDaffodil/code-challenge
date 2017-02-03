@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import styles from './styles';
 import Icon from '../Icon';
-import { colors } from '../../config/styles';
+import defaultStyles, { colors } from '../../config/styles';
 
 const TeamCard = props => {
 	return (
@@ -10,13 +10,13 @@ const TeamCard = props => {
 			<View style={styles.logoContainer}>
 				{
 					props.teamDetails.side === 'Home' &&
-					<View style={props.left ? styles.sideIconLeft : styles.sideIconRight}>
-						<Icon value="Home" width={30} height={30} fill={colors.type} />
+					<View style={[styles.sideIcon, props.left ? styles.sideIconLeft : styles.sideIconRight]}>
+						<Icon value="Home" width={25} height={25} fill={colors.type} />
 					</View>
 				}
 				<Image source={{ uri: props.teamDetails.logo_url }} style={styles.logo} />
 			</View>
-			<Text style={styles.teamName}>{props.teamDetails.name}</Text>
+			<Text style={defaultStyles.info}>{props.teamDetails.name}</Text>
 		</View>
 	);
 }
