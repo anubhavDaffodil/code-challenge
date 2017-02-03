@@ -11,32 +11,32 @@ const Event = props => {
 	if (props.event.side === 'both')
 		return (
 			<View style={styles.matchEventContainer}>
-				<Icon fill={colors.calm} category={props.event.category} value={props.event.value} width="60" height="60" />
-				<Text style={styles.labelCenterText}>{`${props.event.label} (${props.event.time}')`}</Text>
-				<Icon fill={colors.calm} category={props.event.category} value={props.event.value} width="60" height="60" />
+				<Icon fill={colors.dark} category={props.event.category} value={props.event.value} width="60" height="60" />
+				<Text style={styles.labelCenterText}>{`${props.event.label} `}<Text style={defaultStyles.info}>{`(${props.event.time}')`}</Text></Text>
+				<Icon fill={colors.dark} category={props.event.category} value={props.event.value} width="60" height="60" />
 			</View>
 		);
 
 	if (props.event.side === 'home') {
 		if (props.homeOnLeft) {
-			leftEventLabel = <Text style={[defaultStyles.labelText, styles.labelLeftText]}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			leftEventLabel = <Text style={[defaultStyles.labelText, styles.labelLeftText]}><Text style={defaultStyles.info}>{`(${props.event.time}') `}</Text>{props.event.label}</Text>;
 			if (props.event.additionalInfo)
 				rightEventLabel = <Text style={[defaultStyles.labelAdditionalText, styles.labelRightAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
-			rightEventLabel = <Text style={[defaultStyles.labelText, styles.labelRightText]}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			rightEventLabel = <Text style={[defaultStyles.labelText, styles.labelRightText]}>{props.event.label}<Text style={defaultStyles.info}>{` (${props.event.time}')`}</Text></Text>;
 			if (props.event.additionalInfo)
 				leftEventLabel = <Text style={[defaultStyles.labelAdditionalText, styles.labelLeftAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 	}
 	else if (props.event.side === 'away') {
 		if (!props.homeOnLeft) {
-			leftEventLabel = <Text style={[defaultStyles.labelText, styles.labelLeftText]}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			leftEventLabel = <Text style={[defaultStyles.labelText, styles.labelLeftText]}><Text style={defaultStyles.info}>{`(${props.event.time}') `}</Text>{`${props.event.label}`}</Text>;
 			if (props.event.additionalInfo)
 				rightEventLabel = <Text style={[defaultStyles.labelAdditionalText, styles.labelRightAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
-			rightEventLabel = <Text style={[defaultStyles.labelText, styles.labelRightText]}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			rightEventLabel = <Text style={[defaultStyles.labelText, styles.labelRightText]}>{props.event.label}<Text style={defaultStyles.info}>{` (${props.event.time}')`}</Text></Text>;
 			if (props.event.additionalInfo)
 				leftEventLabel = <Text style={[defaultStyles.labelAdditionalText, styles.labelLeftAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
