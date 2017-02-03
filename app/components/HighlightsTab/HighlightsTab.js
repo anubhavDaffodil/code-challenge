@@ -5,7 +5,7 @@ import moment from 'moment';
 import TeamDetails from '../TeamDetails';
 import defaultStyles from '../../config/styles';
 
-const SummaryTab = props => {
+const HighlightsTab = props => {
 	return (
 		<View style={styles.container}>
 			<Text style={defaultStyles.headerText1}>{props.matchDetails.name}</Text>
@@ -26,8 +26,8 @@ const SummaryTab = props => {
 	);
 }
 
-SummaryTab.propTypes = {
+HighlightsTab.propTypes = {
 	matchDetails: React.PropTypes.object.isRequired
 };
 
-export default SummaryTab;
+export default HighlightsTab;

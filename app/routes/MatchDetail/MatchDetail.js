@@ -4,8 +4,8 @@ import { colors } from '../../config/styles';
 import styles from './styles';
 import TeamCard from '../../components/TeamCard';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
-import SummaryTab from '../../components/SummaryTab';
-import EventsTab from '../../components/EventsTab';
+import HighlightsTab from '../../components/HighlightsTab';
+import LiveTab from '../../components/LiveTab';
 import LeagueTab from '../../components/LeagueTab';
 
 const MatchDetail = props => {
@@ -33,8 +33,8 @@ const MatchDetail = props => {
 					tabBarInactiveTextColor={colors.stable}
 					tabBarBackgroundColor={colors.type}
 					>
-					<SummaryTab tabLabel="Highlights" matchDetails={props.matchDetails} />
-					<EventsTab tabLabel="Live" homeOnLeft={props.matchDetails.team_data[0].side === 'Home'} events={props.matchDetails.events} />
+					<HighlightsTab tabLabel="Highlights" matchDetails={props.matchDetails} />
+					<LiveTab tabLabel="Live" homeOnLeft={props.matchDetails.team_data[0].side === 'Home'} events={props.matchDetails.events} />
 					<LeagueTab tabLabel="League" matchDetails={props.matchDetails} />
 				</ScrollableTabView>
 			</View>
