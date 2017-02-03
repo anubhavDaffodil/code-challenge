@@ -14,12 +14,12 @@ const HighlightsTab = props => {
 			</View>
 			<View style={styles.horizontalContainer}>
 				<View style={styles.horizontalItemContainer}>
-					<Text style={defaultStyles.info}>First Half: <Text style={defaultStyles.highlight1}>{`${props.matchDetails.first_half_time}'`}</Text></Text>
-					<Text style={styles.highlight2}>{`${moment(props.matchDetails.first_half_start).format('LT')} - ${moment(props.matchDetails.first_half_end).format('LT')}`}</Text>
+					<Text style={defaultStyles.labelText}>First Half: <Text style={defaultStyles.highlightValue}>{`${props.matchDetails.first_half_time}'`}</Text></Text>
+					<Text style={defaultStyles.info}>{`${moment(props.matchDetails.first_half_start).format('LT')} - ${moment(props.matchDetails.first_half_end).format('LT')}`}</Text>
 				</View>
 				<View style={styles.horizontalItemContainer}>
-					<Text style={defaultStyles.info}>Second Half: <Text style={defaultStyles.highlight1}>{`${props.matchDetails.second_half_time}'`}</Text></Text>
-					<Text style={styles.highlight2}>{`${moment(props.matchDetails.second_half_start).format('LT')} - ${moment(props.matchDetails.second_half_end).format('LT')}`}</Text>
+					<Text style={defaultStyles.labelText}>Second Half: <Text style={defaultStyles.highlightValue}>{`${props.matchDetails.second_half_time}'`}</Text></Text>
+					<Text style={defaultStyles.info}>{`${moment(props.matchDetails.second_half_start).format('LT')} - ${moment(props.matchDetails.second_half_end).format('LT')}`}</Text>
 				</View>
 			</View>
 		</View>
