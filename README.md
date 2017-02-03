@@ -15,7 +15,7 @@ To build the app, follow these simple steps:
 ## Screenshots
 ![Highlights Tab](https://ys1sra.dm2302.livefilestore.com/y3m0i40q7B9rSCyA1_LDH6FL8SJYWiDjh4f3M1oDvOK-JVu8bZEFD8Lu97gsK1TZ1x0R-qDKe-_mrJhTGs7wO8PDFRKfVhv9oMlbMyTWQj-ooPzfnO6W-UZlonyMM27GQfoboFa4rqQ8IwIkxCUfK7fcKxxMI-rirm-SHNIu-9QXoY?width=768&height=1280&cropmode=none)
 
-![Live Tab](https://lrmqoq.dm2302.livefilestore.com/y3mnoI-fvqlUTfxaH7Mw0m3OGhfWRI2XL9r38GpPXeS4rnZyPrv5b0qb9SI8_XP51-sqHu2b-LZ16StTBv2otuu7BO6a_VtFbj4siMCTWG8N9-N8cGMyafA5ga2Y9XW_paZMdoPkrCHNDvpYJUsxqMsn2KAVMvwSYWqphFxZYai9zg?width=768&height=1280&cropmode=none)
+![Live Tab](https://lrmqoq.dm2302.livefilestore.com/y3mkcBFgrvbSMbpmxrI5leu9eOgX8Ggn2Mjjo7E4sItrXXnlLbKEWDMtp7TaFZ97W_91Z_5Q5_bU1A8iyMSlhDdWMLMiH1xC3BPvAM6hqv8wWn5pHaibF8p5E8NCRnvvpV_8H8_kjOVwMbXqZkgn-jH2EciQvGQOwuMClCuPyKPbXc?width=768&height=1280&cropmode=none)
 
 ![League Tab](https://j3jlda.dm2302.livefilestore.com/y3m-JcPTIY61qmJ0lIzqHs8_HBnKpLp7xFb3pyh49I4_MHuAvY559nErzSPD-j0U4HscylctCtbZoSzA3_LKuqPhLwJjYY7KT9uthoOoiw1HP8XSqdYSTgFbigRhhZ_H62w9e95PP3Bl7llwGyxkL_TzQLtmnfGSQfHu7Ni-0aRhn8?width=768&height=1280&cropmode=none)
 
