@@ -46,6 +46,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: colors.dark,
         fontSize: 15
+    },
+    labelText: {
+        color: colors.type,
+        fontWeight: 'bold'
+    },
+    labelAdditionalText: {
+        color: colors.dark,
+        fontWeight: 'bold'
     }
 });
 
