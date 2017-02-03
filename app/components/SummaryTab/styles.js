@@ -17,7 +17,12 @@ export default StyleSheet.create({
 		fontWeight: 'bold',
 		color: colors.dark
 	},
-	teamInfo: {
+	horizontalContainer: {
 		flexDirection: 'row'
+	},
+	horizontalItemContainer: {
+		marginLeft: 20,
+		marginRight: 20,
+		marginTop: 5
 	}
 });
