@@ -24,27 +24,32 @@ export default StyleSheet.create({
 		marginLeft: 20,
 		marginRight: 20,
 		color: colors.calm,
-		textAlign: 'center'
+		textAlign: 'center',
+		fontWeight: 'bold'
 	},
 	labelLeftText: {
 		flex: 1,
 		color: colors.type,
-		textAlign: 'right'
+		textAlign: 'right',
+		fontWeight: 'bold'
 	},
 	labelRightText: {
 		flex: 1,
 		color: colors.type,
-		textAlign: 'left'
+		textAlign: 'left',
+		fontWeight: 'bold'
 	},
 	labelLeftAdditionalText: {
 		flex: 1,
 		color: colors.dark,
-		textAlign: 'right'
+		textAlign: 'right',
+		fontWeight: 'bold'
 	},
 	labelRightAdditionalText: {
 		flex: 1,
 		color: colors.dark,
-		textAlign: 'left'
+		textAlign: 'left',
+		fontWeight: 'bold'
 	},
 	labelContainer: {
 		flex: 3,

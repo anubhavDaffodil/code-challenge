@@ -21,7 +21,7 @@ const Event = props => {
 		if (props.homeOnLeft) {
 			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
 			if (props.event.additionalInfo)
-				rightEventLabel = <Text style={styles.labelRighAdditionaltText}>{`${props.event.additionalInfo}`}</Text>;
+				rightEventLabel = <Text style={styles.labelRightAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
 			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
@@ -33,7 +33,7 @@ const Event = props => {
 		if (!props.homeOnLeft) {
 			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
 			if (props.event.additionalInfo)
-				rightEventLabel = <Text style={styles.labelRighAdditionaltText}>{`${props.event.additionalInfo}`}</Text>;
+				rightEventLabel = <Text style={styles.labelRightAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
 			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
