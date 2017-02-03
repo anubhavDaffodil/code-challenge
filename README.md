@@ -30,3 +30,6 @@ To build the app, follow these simple steps:
 * No sample event provided for second yellow card or red card. Assuming those events will have category as 'booking', and value as 'Red' and 'SecondYellow' respectively
 * No sample event provided for own goal. Assuming that event will have category as 'goal', and value as 'OwnGoal'
 * Substitution on/off have separate events, but only one usable SVG icon provided (including both green and red arrows). Therefore, the SVG has been broken into two parts
+
+## Test
+Run `npm test`
