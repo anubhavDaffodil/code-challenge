@@ -28,7 +28,7 @@ class EventsTab extends Component {
 }
 
 EventsTab.propTypes = {
-	events: React.PropTypes.array
+	events: React.PropTypes.array.isRequired
 };
 
 export default EventsTab;

@@ -57,7 +57,7 @@ const Event = props => {
 }
 
 Event.propTypes = {
-	event: React.PropTypes.object
+	event: React.PropTypes.object.isRequired
 };
 
 export default Event;

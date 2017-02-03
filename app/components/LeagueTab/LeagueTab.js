@@ -27,7 +27,7 @@ const LeagueTab = props => {
 }
 
 LeagueTab.propTypes = {
-	details: React.PropTypes.object
+	matchDetails: React.PropTypes.object.isRequired
 };
 
 export default LeagueTab;

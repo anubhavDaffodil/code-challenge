@@ -11,7 +11,7 @@ const SummaryTab = props => {
 }
 
 SummaryTab.propTypes = {
-	details: React.PropTypes.object
+	matchDetails: React.PropTypes.object.isRequired
 };
 
 export default SummaryTab;

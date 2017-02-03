@@ -22,7 +22,7 @@ const TeamCard = props => {
 }
 
 TeamCard.propTypes = {
-	teamDetails: React.PropTypes.object,
+	teamDetails: React.PropTypes.object.isRequired,
 	left: React.PropTypes.bool
 };
 

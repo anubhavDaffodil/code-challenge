@@ -43,7 +43,7 @@ const MatchDetail = props => {
 };
 
 MatchDetail.propTypes = {
-	matchDetails: React.PropTypes.object
+	matchDetails: React.PropTypes.object.isRequired
 };
 
 export default MatchDetail;
