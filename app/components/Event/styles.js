@@ -27,29 +27,27 @@ export default StyleSheet.create({
 		textAlign: 'center',
 		fontWeight: 'bold'
 	},
-	labelLeftText: {
+	labelText: {
 		flex: 1,
 		color: colors.type,
-		textAlign: 'right',
 		fontWeight: 'bold'
+	},
+	labelAdditionalText: {
+		flex: 1,
+		color: colors.dark,
+		fontWeight: 'bold'
+	},
+	labelLeftText: {
+		textAlign: 'right'
 	},
 	labelRightText: {
-		flex: 1,
-		color: colors.type,
-		textAlign: 'left',
-		fontWeight: 'bold'
+		textAlign: 'left'
 	},
 	labelLeftAdditionalText: {
-		flex: 1,
-		color: colors.dark,
-		textAlign: 'right',
-		fontWeight: 'bold'
+		textAlign: 'right'
 	},
 	labelRightAdditionalText: {
-		flex: 1,
-		color: colors.dark,
-		textAlign: 'left',
-		fontWeight: 'bold'
+		textAlign: 'left'
 	},
 	labelContainer: {
 		flex: 3,

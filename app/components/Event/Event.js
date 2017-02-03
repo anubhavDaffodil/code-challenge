@@ -19,26 +19,26 @@ const Event = props => {
 
 	if (props.event.side === 'home') {
 		if (props.homeOnLeft) {
-			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			leftEventLabel = <Text style={[styles.labelText, styles.labelLeftText]}>{`(${props.event.time}') ${props.event.label}`}</Text>;
 			if (props.event.additionalInfo)
-				rightEventLabel = <Text style={styles.labelRightAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+				rightEventLabel = <Text style={[styles.labelAdditionalText, styles.labelRightAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
-			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			rightEventLabel = <Text style={[styles.labelText, styles.labelRightText]}>{`${props.event.label} (${props.event.time}')`}</Text>;
 			if (props.event.additionalInfo)
-				leftEventLabel = <Text style={styles.labelLeftAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+				leftEventLabel = <Text style={[styles.labelAdditionalText, styles.labelLeftAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 	}
 	else if (props.event.side === 'away') {
 		if (!props.homeOnLeft) {
-			leftEventLabel = <Text style={styles.labelLeftText}>{`(${props.event.time}') ${props.event.label}`}</Text>;
+			leftEventLabel = <Text style={[styles.labelText, styles.labelLeftText]}>{`(${props.event.time}') ${props.event.label}`}</Text>;
 			if (props.event.additionalInfo)
-				rightEventLabel = <Text style={styles.labelRightAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+				rightEventLabel = <Text style={[styles.labelAdditionalText, styles.labelRightAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 		else {
-			rightEventLabel = <Text style={styles.labelRightText}>{`${props.event.label} (${props.event.time}')`}</Text>;
+			rightEventLabel = <Text style={[styles.labelText, styles.labelRightText]}>{`${props.event.label} (${props.event.time}')`}</Text>;
 			if (props.event.additionalInfo)
-				leftEventLabel = <Text style={styles.labelLeftAdditionalText}>{`${props.event.additionalInfo}`}</Text>;
+				leftEventLabel = <Text style={[styles.labelAdditionalText, styles.labelLeftAdditionalText]}>{`${props.event.additionalInfo}`}</Text>;
 		}
 	}
 	return (
