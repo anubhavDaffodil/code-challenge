@@ -14,7 +14,7 @@ const TeamDetails = props => {
 				<Text style={defaultStyles.info}>Extra Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.extrascore || '-'}</Text></Text>
 				<Text style={defaultStyles.info}>Shootout Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.shootoutscore || '-'}</Text></Text>
 				<View style={styles.shootoutsContainer}>
-					{props.teamDetails.shootout.map((event, i) => <Icon key={i} value={event} category="penaltyshot" />)}
+					{props.teamDetails.shootout.map((event, i) => <Icon key={i} value={event} category="penaltyshot" height={45} width={45} />)}
 				</View>
 			</View>
 		</View>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import styles from './styles';
 import defaultStyles from '../../config/styles';
 import moment from 'moment';
@@ -20,8 +20,9 @@ const LeagueTab = props => {
 					<Text style={defaultStyles.highlight2}>{props.matchDetails.venue_name}</Text>
 				</View>
 				<Text style={defaultStyles.info}>{moment(props.matchDetails.local_date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text>
-				<Text style={defaultStyles.info}>Match Type: {props.matchDetails.match_type}</Text>
-				<Text style={defaultStyles.info}>Referee: {props.matchDetails.referee}</Text>
+				<Text style={defaultStyles.info}>Match Type: <Text style={defaultStyles.labelText}>{props.matchDetails.match_type}</Text></Text>
+				<Text style={defaultStyles.info}>Referee: <Text style={defaultStyles.labelText}>{props.matchDetails.referee}</Text></Text>
+				<Image source={{ uri: props.matchDetails.competition_logo_url }} resizeMode="contain" style={styles.competitionLogo} />
 			</View>
 		</View>
 	);

@@ -7,11 +7,11 @@ export default StyleSheet.create({
 		padding: 10,
 		alignItems: 'center'
 	},
-	header: {
-	},
 	body: {
-		flex: 1,
-		marginTop: 10
+		padding: 10,
+		marginTop: 10,
+		backgroundColor: colors.stable,
+		alignItems: 'center'
 	},
 	subHeader: {
 		flexDirection: 'row',
@@ -20,5 +20,11 @@ export default StyleSheet.create({
 	location: {
 		flexDirection: 'row',
 		alignItems: 'center',
+		marginBottom: 10
+	},
+	competitionLogo: {
+		height: 100,
+		width: 100,
+		resizeMode: 'contain'
 	}
 });
