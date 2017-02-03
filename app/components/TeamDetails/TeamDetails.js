@@ -7,7 +7,7 @@ import defaultStyles, { colors } from '../../config/styles';
 const TeamDetails = props => {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.subHeader}>{`${props.teamDetails.name} (${props.teamDetails.num_players})`}</Text>
+			<Text style={defaultStyles.labelText}>{`${props.teamDetails.name} `}<Text style={defaultStyles.info}>{`(${props.teamDetails.num_players})`}</Text></Text>
 			<View style={styles.subContainer}>
 				<Text style={defaultStyles.info}>Half Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.halfscore || '-'}</Text></Text>
 				<Text style={defaultStyles.info}>Full Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.ninetyscore || '-'}</Text></Text>
