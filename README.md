@@ -1,4 +1,4 @@
-## Sportdec App
+# Sportdec
 The app aims to provide live scores of a soccer match, of various leagues and seasons. The events of the match are displayed using a series of intuitive icons, along with their timestamps.
 
 ## Installation and Usage
