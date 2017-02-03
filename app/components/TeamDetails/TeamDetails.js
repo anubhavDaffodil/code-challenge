@@ -9,10 +9,10 @@ const TeamDetails = props => {
 		<View style={styles.container}>
 			<Text style={styles.subHeader}>{`${props.teamDetails.name} (${props.teamDetails.num_players})`}</Text>
 			<View style={styles.subContainer}>
-				<Text style={styles.info}>Half Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.halfscore || '-'}</Text></Text>
-				<Text style={styles.info}>Full Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.ninetyscore || '-'}</Text></Text>
-				<Text style={styles.info}>Extra Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.extrascore || '-'}</Text></Text>
-				<Text style={styles.info}>Shootout Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.shootoutscore || '-'}</Text></Text>
+				<Text style={defaultStyles.info}>Half Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.halfscore || '-'}</Text></Text>
+				<Text style={defaultStyles.info}>Full Time Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.ninetyscore || '-'}</Text></Text>
+				<Text style={defaultStyles.info}>Extra Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.extrascore || '-'}</Text></Text>
+				<Text style={defaultStyles.info}>Shootout Score: <Text style={defaultStyles.highlightValue}>{props.teamDetails.shootoutscore || '-'}</Text></Text>
 				<View style={styles.shootoutsContainer}>
 					{props.teamDetails.shootout.map((event, i) => <Icon key={i} value={event} category="penaltyshot" />)}
 				</View>
