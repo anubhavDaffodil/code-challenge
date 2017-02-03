@@ -3,6 +3,7 @@ import { colors } from '../../config/styles';
 
 export default StyleSheet.create({
 	container: {
-		flex: 1
+		width: 18,
+		height: 20
 	}
 });

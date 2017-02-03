@@ -5,7 +5,11 @@ export default StyleSheet.create({
 	container: {
 		flex: 1,
 		flexDirection: 'row',
-		padding: 10
+		padding: 5,
+		backgroundColor: colors.stable,
+		marginLeft: 5,
+		marginRight: 5,
+		marginBottom: 5
 	},
 	matchEventContainer: {
 		flex: 1,
@@ -13,32 +17,30 @@ export default StyleSheet.create({
 		padding: 10,
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: colors.type
+		backgroundColor: colors.type,
+		marginBottom: 5
 	},
 	labelCenterText: {
 		marginLeft: 20,
 		marginRight: 20,
 		color: colors.calm,
-		textAlign: 'center'
+		textAlign: 'center',
+		fontWeight: 'bold'
 	},
 	labelLeftText: {
 		flex: 1,
-		color: colors.type,
 		textAlign: 'right'
 	},
 	labelRightText: {
 		flex: 1,
-		color: colors.type,
 		textAlign: 'left'
 	},
 	labelLeftAdditionalText: {
 		flex: 1,
-		color: colors.dark,
 		textAlign: 'right'
 	},
 	labelRightAdditionalText: {
 		flex: 1,
-		color: colors.dark,
 		textAlign: 'left'
 	},
 	labelContainer: {

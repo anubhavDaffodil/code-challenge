@@ -7,42 +7,24 @@ export default StyleSheet.create({
 		padding: 10,
 		alignItems: 'center'
 	},
-	header: {
-	},
 	body: {
-		flex: 1,
-		marginTop: 10
-	},
-	headerText: {
-		fontSize: 25,
-		color: colors.royal,
-		fontWeight: 'bold',
+		padding: 10,
+		marginTop: 10,
+		backgroundColor: colors.stable,
+		alignItems: 'center'
 	},
 	subHeader: {
 		flexDirection: 'row',
 		justifyContent: 'space-between'
 	},
-	subHeaderText: {
-		color: colors.dark,
-		fontSize: 15,
-		fontWeight: 'bold'
-	},
-	info: {
-		fontWeight: 'bold',
-		color: colors.dark
-	},
 	location: {
 		flexDirection: 'row',
 		alignItems: 'center',
+		marginBottom: 10
 	},
-	city: {
-		fontWeight: 'bold',
-		fontSize: 20,
-		color: colors.type
-	},
-	venue: {
-		fontWeight: 'bold',
-		color: colors.dark,
-		fontSize: 15
+	competitionLogo: {
+		height: 100,
+		width: 100,
+		resizeMode: 'contain'
 	}
 });

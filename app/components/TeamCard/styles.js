@@ -8,23 +8,18 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		padding: 5
 	},
-	teamName: {
-		textAlign: 'center',
-		color: colors.dark,
-		fontWeight: 'bold'
-	},
 	logoContainer: {
 		flexDirection: 'row'
 	},
-	sideIconLeft: {
+	sideIcon: {
 		position: 'absolute',
-		left: -10,
 		top: -10
 	},
+	sideIconLeft: {
+		left: 0
+	},
 	sideIconRight: {
-		position: 'absolute',
-		right: -10,
-		top: -10
+		right: 0
 	},
 	logo: {
 		height: 75,

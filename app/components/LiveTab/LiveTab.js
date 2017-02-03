@@ -3,7 +3,7 @@ import { View, Text, ListView } from 'react-native';
 import styles from './styles';
 import Event from '../Event';
 
-class EventsTab extends Component {
+class LiveTab extends Component {
 	constructor(props) {
 		super(props);
 		const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
@@ -27,8 +27,8 @@ class EventsTab extends Component {
 	}
 }
 
-EventsTab.propTypes = {
-	events: React.PropTypes.array
+LiveTab.propTypes = {
+	events: React.PropTypes.array.isRequired
 };
 
-export default EventsTab;
+export default LiveTab;
