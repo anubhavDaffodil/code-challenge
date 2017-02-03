@@ -4,25 +4,6 @@ import styles from './styles';
 import Icon from '../Icon';
 import { colors } from '../../config/styles';
 
-function getIconName(category, value) {
-	switch (category) {
-		case 'period_change':
-			return 'Whistle';
-		case 'goal':
-			return value;				// Assuming value will be either Goal or OwnGoal
-		case 'substitution_on':
-			return 'SubstitutionOn';
-		case 'substitution_off':
-			return 'SubstitutionOff';
-		case 'booking':
-			return `${value}Card`;		// Assuming value will be 'Yellow', 'Red', or 'SecondYellow'
-		case 'penaltyshot':
-			return `Penalty${value}`	// Assuming value will be 'Scored', 'Saved', or 'Missed'
-		default:
-			return value;
-	}
-}
-
 const Event = props => {
 	let leftEventLabel;
 	let rightEventLabel;
@@ -30,13 +11,9 @@ const Event = props => {
 	if (props.event.side === 'both')
 		return (
 			<View style={styles.matchEventContainer}>
-				<View style={styles.iconSubContainer}>
-					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
-				</View>
+				<Icon fill={colors.calm} category={props.event.category} value={props.event.value} width="60" height="60" />
 				<Text style={styles.labelCenterText}>{`${props.event.label} (${props.event.time}')`}</Text>
-				<View style={styles.iconSubContainer}>
-					<Icon fill={colors.calm} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
-				</View>
+				<Icon fill={colors.calm} category={props.event.category} value={props.event.value} width="60" height="60" />
 			</View>
 		);
 
@@ -70,9 +47,7 @@ const Event = props => {
 				{leftEventLabel}
 			</View>
 			<View style={styles.iconContainer}>
-				<View style={styles.iconSubContainer}>
-					<Icon fill={colors.type} name={getIconName(props.event.category, props.event.value)} width="60" height="60" />
-				</View>
+				<Icon fill={colors.type} category={props.event.category} value={props.event.value} width="60" height="60" />
 			</View>
 			<View style={styles.labelContainer}>
 				{rightEventLabel}
