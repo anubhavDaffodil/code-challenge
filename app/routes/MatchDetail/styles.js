@@ -7,6 +7,7 @@ export default StyleSheet.create({
 	},
 	header: {
 		flex: 1,
+		paddingTop: 10,
 		backgroundColor: colors.royal,
 		justifyContent: 'center',
 		alignItems: 'center'
@@ -50,5 +51,11 @@ export default StyleSheet.create({
 	},
 	tabBarUnderlineStyle: {
 		backgroundColor: colors.calm
+	},
+	logo: {
+		position: 'absolute',
+		height: 50,
+		width: 50,
+		left: 10
 	}
 });

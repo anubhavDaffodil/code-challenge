@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import { colors } from '../../config/styles';
 import styles from './styles';
 import TeamCard from '../../components/TeamCard';
@@ -12,6 +12,7 @@ const MatchDetail = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.header}>
+				<Image source={require('../../images/sportdec-diamond.png')} style={styles.logo} />
 				<Text style={styles.competitionName}>{props.matchDetails.competition_name}</Text>
 				<Text style={styles.seasonName}>{props.matchDetails.season_name}</Text>
 				<View style={styles.teams}>
